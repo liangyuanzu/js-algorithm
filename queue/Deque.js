@@ -13,11 +13,11 @@ class ArrDeque {
   }
   // 移除队头元素
   removeFront() {
-    this.items.shift();
+    return this.items.shift();
   }
   // 移除队尾元素
   removeBack() {
-    this.items.pop();
+    return this.items.pop();
   }
   // 返回队头元素
   peekFront() {
