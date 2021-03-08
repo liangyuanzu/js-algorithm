@@ -27,6 +27,10 @@ class ArrStack {
   clear() {
     this.items = [];
   }
+  // 转字符串
+  toString() {
+    return this.items.toString();
+  }
 }
 
 // 用对象模拟栈
