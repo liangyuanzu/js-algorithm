@@ -39,7 +39,7 @@ var addTwoNumbers = function (l1, l2) {
     carry = Math.floor(val / 10);
     p3.next = new ListNode(val % 10);
     if (p1) p1 = p1.next;
-    if (p2) p1 = p2.next;
+    if (p2) p2 = p2.next;
     p3 = p3.next;
   }
   if (carry) p3.next = new ListNode(carry);
