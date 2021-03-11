@@ -15,6 +15,8 @@
 /**
  * @param {string} s
  * @return {number}
+ * 时间复杂度 O(n)
+ * 空间复杂度 O(m) 字符串不重复字符的个数
  */
 var lengthOfLongestSubstring = function (s) {
   let l = 0;
