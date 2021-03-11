@@ -15,6 +15,9 @@ const has = set.has(obj);
 // delete
 set.delete(5);
 
+// 清空
+// set.clear();
+
 // 迭代
 for (let val of set) {
   console.log(val);
