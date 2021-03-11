@@ -18,6 +18,9 @@ set.delete(5);
 // 清空
 // set.clear();
 
+// size
+const size = set.size;
+
 // 迭代
 for (let val of set) {
   console.log(val);
