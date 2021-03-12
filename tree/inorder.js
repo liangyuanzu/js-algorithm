@@ -14,4 +14,28 @@ const inOrder = (root) => {
   inOrder(root.right);
 };
 
-inOrder(bt);
+// inOrder(bt);
+
+/* 
+非递归
+原理: 用栈模拟函数调用堆栈
+1. 将所有左子树入栈
+2. 出栈并访问根节点
+3. 将所有右子树入栈
+*/
+const NonRecursiveInOrder = (root) => {
+  if (!root) return;
+  const stk = [];
+  let p = root;
+  while (stk.length || p) {
+    while (p) {
+      stk.push(p);
+      p = p.left;
+    }
+    const n = stk.pop();
+    console.log(n.val);
+    p = n.right;
+  }
+};
+
+NonRecursiveInOrder(bt);
