@@ -77,3 +77,5 @@ h.insert(1);
 h.pop();
 h.peek();
 h.size();
+
+module.exports = MinHeap;
